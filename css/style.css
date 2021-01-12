@@ -1,0 +1,243 @@
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 1.0rem;
+  line-height: 1;
+  text-align: left;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  color: #666;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 66px;
+  background-color: #fff;
+}
+
+.header-in {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 20px;
+}
+
+.header-in .header-menu {
+  border: none;
+  outline: none !important;
+  background-color: unset;
+  cursor: pointer;
+}
+
+.header-in .header-menu span {
+  background-color: #000;
+  width: 20px;
+  height: 2px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.header-in .header-menu span:last-child {
+  margin-bottom: 0;
+}
+
+.header-in .title img {
+  width: 130px;
+}
+
+.header-in .language {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background-color: #666;
+  border-radius: 50%;
+}
+
+.header-in .language .english {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 0.5em;
+}
+
+.top-image {
+  height: 338px;
+  width: 98%;
+  margin: 66px auto 0;
+  background-image: url(../img/main-image.jpeg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 66px;
+  position: relative;
+}
+
+.top-image .shop-image {
+  width: 170px;
+  position: absolute;
+  bottom: 11%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.shinjuku {
+  background-color: #fff;
+  position: relative;
+  text-align: center;
+}
+
+.shinjuku__float {
+  background-color: #fff;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 28px;
+}
+
+.shinjuku__float p {
+  white-space: nowrap;
+  padding: 20px 40px;
+}
+
+.shinjuku__content {
+  padding-top: 50px;
+  margin-bottom: 30px;
+  font-size: 0.8em;
+}
+
+.shinjuku__content p:first-child {
+  margin-bottom: 10px;
+}
+
+.shinjuku__time {
+  font-size: 0.8em;
+  margin-bottom: 40px;
+}
+
+.shinjuku__time p:first-child {
+  margin-bottom: 30px;
+}
+
+.shinjuku__slide {
+  position: relative;
+}
+
+.shinjuku__slide .prev {
+  position: absolute;
+  top: 100px;
+  left: 5%;
+  cursor: pointer;
+}
+
+.shinjuku__slide .prev span {
+  width: 17px;
+  height: 3px;
+  background-color: #888;
+  display: block;
+  border-radius: 10px;
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+}
+
+.shinjuku__slide .prev span:first-child {
+  -webkit-transform: rotate(-45deg) translateY(3px);
+          transform: rotate(-45deg) translateY(3px);
+}
+
+.shinjuku__slide .prev span:last-child {
+  -webkit-transform: rotate(45deg) translateY(-3px);
+          transform: rotate(45deg) translateY(-3px);
+}
+
+.shinjuku__slide .next {
+  position: absolute;
+  top: 100px;
+  right: 5%;
+  cursor: pointer;
+}
+
+.shinjuku__slide .next span {
+  width: 17px;
+  height: 3px;
+  background-color: #888;
+  display: block;
+  border-radius: 10px;
+  -webkit-transform-origin: right center;
+          transform-origin: right center;
+}
+
+.shinjuku__slide .next span:first-child {
+  -webkit-transform: rotate(45deg) translateY(3px);
+          transform: rotate(45deg) translateY(3px);
+}
+
+.shinjuku__slide .next span:last-child {
+  -webkit-transform: rotate(-45deg) translateY(-3px);
+          transform: rotate(-45deg) translateY(-3px);
+}
+
+.shinjuku__slide .slide-image img {
+  width: 65%;
+}
+
+.shinjuku__slide .slide-lists {
+  width: 250px;
+  height: 50px;
+  margin: 10px auto 50px;
+}
+
+.shinjuku__slide .slide-lists__container {
+  width: 100%;
+  height: 100%;
+  line-height: 25px;
+}
+
+.shinjuku__slide .slide-lists__container div {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #888;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.shinjuku__slide .slide-lists__container div:not(:last-child) {
+  margin-right: 16px;
+}
+
+.shinjuku__slide .slide-lists__container div.current {
+  background-color: #FFD3C9;
+}
+/*# sourceMappingURL=style.css.map */
